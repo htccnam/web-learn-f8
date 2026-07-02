@@ -1,0 +1,10 @@
+* {
+}
+body > div > a {
+    text-decoration: none;
+    margin: 10px 20px 10px;
+}
+
+body > div.menu > a > a {
+    display: none;
+}
