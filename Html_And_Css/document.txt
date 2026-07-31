@@ -1,0 +1,29 @@
+1. Phân loại lại các thành phần bạn đã kể
+Để dễ hiểu, mình chia làm 2 nhóm chính:
+
+Nhóm A – Khung bố cục (Layout / Semantic HTML): Đây là các thẻ HTML có nghĩa mà bạn nên dùng để dựng khung trang.
+
+Header (Đầu trang)
+
+Navigation (Thanh điều hướng)
+
+Main Content (Nội dung chính - thẻ <main>)
+
+Footer (Chân trang)
+
+Sidebar (Thanh bên - thẻ <aside>)
+
+Nhóm B – Thành phần giao diện (UI Components): Đây là các chi tiết chức năng bên trong. Lưu ý: Với các thành phần này, bạn KHÔNG nên dùng thẻ HTML ngữ nghĩa đặc biệt (vì không có), mà hầu hết sẽ dùng <div> kết hợp với class hoặc role để đánh dấu.
+
+Slideshow / Banner (Trình chiếu)
+
+Form (Biểu mẫu - dùng <form>)
+
+Dialog/Modal (Cửa sổ bật lên)
+
+Toast (Thông báo nổi)
+
+Breadcrumb (Đường dẫn phân cấp)
+
+Tabbar (Thanh tab - thường nằm trong Navigation hoặc Main)
+

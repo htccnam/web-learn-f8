@@ -1,0 +1,48 @@
+:root {
+    --primary-theme: green;
+    --badge-bg: #ff5252;
+    --badge-size: 1.25rem;
+    --badge-offset-top: -0.25rem;
+    --badge-offset-right: -0.25rem;
+}
+
+.notification-btn {
+    background: transparent;
+    /*xóa background mặc  định của trình duyệt trên button( có nền xám(chrome/edge)..)  */
+    border: none;
+    cursor: pointer;
+    /* tạo hiệu ứng con trỏ chuột khi trỏ vào button*/
+    color: #333;
+    display: inline-flex;
+    font-size: 1.5rem;
+    /* kích cỡ của các item bên trong button ( ở đây là hình cái chuông và số thông báo )*/
+    position: relative;
+    padding: 0.3rem;
+    transition: color 0.2s;
+}
+.notification-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* căn giữa các class */
+
+    border-radius: 10%;
+    background-color: var(--badge-bg);
+
+    position: absolute;
+
+    top: var(--badge-offset-top);
+    right: var(--badge-offset-right);
+
+    min-width: var(--badge-size);
+    min-height: var(--badge-size);
+    box-shadow: 0 2px 4px grey;
+    /* tạo bóng cho thẻ số */
+}
+.notification-btn:hover {
+    color: #000000;
+}
+
+/* 1rem=16px
+->1.25rem=x px
+*/

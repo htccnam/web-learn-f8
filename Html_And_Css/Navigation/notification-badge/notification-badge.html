@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>notification-badge</title>
+        <script
+            src="https://kit.fontawesome.com/be758ed6ae.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="NotificationBagde.css" />
+    </head>
+    <body>
+        <nav>
+            <!-- thường nằm trong thể navigation -->
+            <button class="notification-btn">
+                <i class="fa-solid fa-bell" aria-hidden="true"></i>
+                <span class="notification-badge" aria-hidden="true">10</span>
+            </button>
+        </nav>
+    </body>
+</html>
+<!-- 
+javascript sử lý khi số thông báo nhiều hơn 99
+function renderBadge(count) {
+  const badge = document.querySelector('.notification-badge');
+  if (count > 0) {
+    badge.textContent = count > 99 ? '99+' : count;
+    badge.style.display = 'inline-flex';
+  } else {
+    badge.style.display = 'none';
+  }
+}
+renderBadge(10); // hiển thị "10"
+renderBadge(150); // hiển thị "99+"
+ -->
