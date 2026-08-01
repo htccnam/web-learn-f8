@@ -1,0 +1,32 @@
+:root {
+    --font-menu:
+        system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav {
+    background-image: url(https://themazine.com/html/scholars-lms/images/home/banner-2.jpg);
+    background-repeat: no-repeat;
+    min-height: 14rem;
+    background-size: contain;
+}
+nav > ul {
+    display: flex;
+}
+nav > ul > li {
+    list-style: none;
+}
+
+.subitem-list {
+    font-family: var(--font-menu);
+}
+.subitem-list > li {
+    list-style: none;
+    /* xóa dấu chấm đầu dòng ở mỗi submenu */
+    background-color: ghostwhite;
+    display: none;
+}
+
+nav > ul > li:hover .subitem-list > li {
+    display: block;
+}
